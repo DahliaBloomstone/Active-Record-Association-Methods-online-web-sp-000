@@ -11,6 +11,7 @@ self.artists.count
   end
 
   def all_artist_names
-self.artists.collect.name
+self.artists.collect do |t|
+  t.name
   end
 end
