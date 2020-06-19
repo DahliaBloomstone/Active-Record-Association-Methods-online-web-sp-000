@@ -11,8 +11,9 @@ self.artists.count
   end
 
   def all_artist_names
+    #return an array of strings containing artist names 
 self.artists.collect do |t|
   t.name
   end
 end
-end 
+end
