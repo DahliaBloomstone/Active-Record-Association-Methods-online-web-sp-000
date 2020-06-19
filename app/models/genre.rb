@@ -11,6 +11,6 @@ self.artists.count
   end
 
   def all_artist_names
-self.artists.name
+self.artists.collect.name
   end
 end
