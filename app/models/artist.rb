@@ -3,7 +3,7 @@ class Artist < ActiveRecord::Base
   has_many :genres, through: :songs
 
   def get_genre_of_first_song
-    #return the genre of the artist's first saved song
+self.genre.first 
   end
 
   def song_count
@@ -14,3 +14,7 @@ class Artist < ActiveRecord::Base
     #return the number of genres associated with the artist
   end
 end
+
+
+
+#Just like above when we called adele.songs, we now want to call songs on the instance that the method will be called on in the future. How do we do that? Yes, self!
